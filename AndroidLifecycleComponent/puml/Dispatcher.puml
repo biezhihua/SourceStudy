@@ -1,0 +1,7 @@
+@startuml
+
+ReportFragment -> LifecycleRegister: onStart
+LifecycleRegister -> ObserverWithState : dispatchEvent
+ObserverWithState -> ReflectiveGenericLifecycleObserver : onStateChanged
+
+@enduml

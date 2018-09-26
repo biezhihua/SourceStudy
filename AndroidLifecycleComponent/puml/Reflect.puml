@@ -1,0 +1,7 @@
+@startuml
+
+ObserverWithState -> Lifecycling : static getCallback()
+Lifecycling -> ReflectiveGenericLifecycleObserver
+ReflectiveGenericLifecycleObserver -> ClassesInfoCache: getInfo()
+
+@enduml

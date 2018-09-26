@@ -1,0 +1,8 @@
+@startuml
+
+ProcessLifecycleOwnerInitializer -> LifecycleDispatcher : onCreate()
+LifecycleDispatcher -> DispatcherActivityCallback: static init()
+DispatcherActivityCallback -> FragmentCallback: onActivityCreated
+DispatcherActivityCallback -> ReportFragment: onActivityCreated
+
+@enduml
